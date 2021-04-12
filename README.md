@@ -1,7 +1,7 @@
 # VECTOR's ESCAPE-POD [DOCKER IMAGE](https://hub.docker.com/r/cyb3rdog/escapepod)
 
-Docker image wrapping the Escape Pod for Anki/DDL Vector Robot.
-Escape Pod allows your favorite robot companion to function independent of our cloud servers while also enabling the customization of voice commands and improving response times.
+Unofficial Docker image wrapping the Escape Pod for Anki/DDL Vector Robot.
+Escape Pod allows your favorite robot companion to function independent of DDL cloud servers while also enabling the customization of voice commands and improving response times.
 
 ## Docker Hub repository:
 #### **[https://hub.docker.com/r/cyb3rdog/escapepod](https://hub.docker.com/r/cyb3rdog/escapepod)**
@@ -31,6 +31,9 @@ Once this command is finished, the EscapePod should be fully online within next 
 
 
 ### EscapePod IP address 
+
+**Depending on the type of your setup, you will most likelly need to configure your docker's virtual machine network adapter mode to 'bridged' so that the virtual machine will in fact get its ip adress directly from your router, and all devices on your local network including Vector will be able to connect to it.**
+The default setting for docker vm adapters is a subnet with the host the virtual machine runs from, so in that scenario, your other devices in your local area network and your vector will be unable to reach it.
 
 1) To check the IP address of your docker virtual machine, you'll need to know the machine name (ie. 'default')
 
