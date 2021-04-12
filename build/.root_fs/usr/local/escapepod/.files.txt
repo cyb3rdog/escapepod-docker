@@ -1,0 +1,18 @@
+This folder contains escapepod files extracted from the following EscapePod directories:
+- /usr/local/escapepod
+
+...
+
+bin/escape-pod 
+ui/assets/jquery.min.3.3.1.js 
+ui/assets/pterm.js 
+ui/assets/sodium.js 
+ui/logs 
+ui/ota/OSKR_EP_1.7.3_6016.ota 
+ui/ota/Prod_EP_1.7.3_6016.ota 
+ui/747baba41526760b7ce256549c89a25e.png 
+ui/index.html 
+ui/styles.css 
+ui/webpack.js 
+model.scorer 
+model.tflite 

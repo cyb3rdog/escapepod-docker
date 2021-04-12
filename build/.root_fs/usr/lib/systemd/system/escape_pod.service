@@ -1,0 +1,27 @@
+[Unit]
+Description=DDL Escape Pod
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+LimitNOFILE=1024
+Restart=on-failure
+RestartSec=10
+EnvironmentFile=/etc/escape-pod.conf
+WorkingDirectory=/home/ubuntu
+ExecStart=/usr/local/escapepod/bin/escape-pod.sh
+PermissionsStartOnly=true
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=escape_pod
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_RAW
+CapabilityBoundingSet=CAP_NET_ADMIN
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_RAW
+AmbientCapabilities=CAP_NET_ADMIN
+
+[Install]
+WantedBy=multi-user.target

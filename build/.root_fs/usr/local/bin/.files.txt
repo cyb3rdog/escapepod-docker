@@ -1,0 +1,15 @@
+This folder contains binary files extracted from the following EscapePod directories:
+- /usr/bin
+
+...
+
+mongo 
+mongod 
+mongodump 
+mongoexport 
+mongofiles 
+mongoimport 
+mongorestore
+mongos 
+mongostat 
+mongotop 
