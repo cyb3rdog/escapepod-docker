@@ -23,7 +23,7 @@ In order to run this container you'll need to have **docker** installed.
 The easiest way to run the docker container, is to execute following docker command:
 
 ```shell
-docker run -it --rm --name escapepod -h escapepod -p 80:80 -p 8084:8084 -p 8085:8085 -p 8086:8086 -d cyb3rdog/escapepod:latest
+docker run -it --rm --name escapepod -h escapepod -p 80:80 -p 8084:8084 -p 8085:8085 -p 8086:8086 -p 65533:65533 -d cyb3rdog/escapepod:latest
 ```
 
 This command will download the image and start the container with the Vector's EscapePod forwarded to port 80 of your virtual machine.
