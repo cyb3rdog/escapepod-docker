@@ -4,8 +4,8 @@
 
 ### **Before building the EscapePod Docker image, all Escape-Pod related files necessary for this build must be copied into the *.root_fs/* sub-directory.**
 
-These files can be obtained and extracted manually from the official escape pod rpi image.
-The script ***escapepod-img-mount.sh*** can automatically download and mount that image to your linux file system, so you should be able to extract all the necessary files.
+These files can be obtained and extracted manually either from the official escape pod rpi image, or from your raspberry pi, in case you have it deployed already.
+The script ***escapepod-img-mount.sh*** can automatically download and mount the original image to your linux file system, so you should be able to extract all the necessary distribution files.
 
 ## FileSystem
 
@@ -41,6 +41,9 @@ Mongo DB database containing the intents, configuration, licence keys, etc..
 ```
 /var/lib/mongodb -> .root_fs/var/lib/mongodb
 ```
+
+- In case your will be copying these files from the distribution image, you will create a docker image with 'blank' database, 
+- For the scenario, where you extract your file from your already deployed and configured raspberry pi, the result Docker image will be already set up, with all your custom intents, your licence keys etc.
 
 ## Building the Docker Image
 
