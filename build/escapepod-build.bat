@@ -126,7 +126,7 @@ ECHO Done.
 ECHO.
 ECHO Creating the container '%SW_NAME%'...
 
-docker run -it --rm --name %SW_NAME% -h %HOST_NAME% -p 80:%SW_PORT% -p 8084:8084 -p 8085:8085 -p 8086:8086 -d %SW_IMAGE%
+docker run -it --rm --name %SW_NAME% -h %HOST_NAME% -p 80:%SW_PORT% -p 8084:8084 -p 8085:8085 -p 8086:8086 -p 65533:65533 -d %SW_IMAGE%
 
 REM ------ START ------
 :Start

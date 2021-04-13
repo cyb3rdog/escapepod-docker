@@ -14,4 +14,4 @@ echo "Done."
 echo ""
 echo "Creating the container '$VAR_SW_NAME'..."
 
-docker run -it --rm --name $VAR_SW_NAME -h $VAR_HOSTNAME -p 80:80 -p 8084:8084 -p 8085:8085 -p 8086:8086 -d $VAR_IMAGE
+docker run -it --rm --name $VAR_SW_NAME -h $VAR_HOSTNAME -p 80:80 -p 8084:8084 -p 8085:8085 -p 8086:8086 -p 65533:65533 -d $VAR_IMAGE
