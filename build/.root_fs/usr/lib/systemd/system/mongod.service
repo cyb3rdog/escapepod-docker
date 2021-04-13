@@ -8,7 +8,7 @@ Wants=network-online.target
 User=mongodb
 Group=mongodb
 EnvironmentFile=-/etc/default/mongod
-ExecStart=/usr/bin/mongod --config /etc/mongod.conf
+ExecStart=/usr/local/bin/mongod.sh
 PIDFile=/var/run/mongodb/mongod.pid
 # file size
 LimitFSIZE=infinity
